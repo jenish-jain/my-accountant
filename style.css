@@ -1,0 +1,178 @@
+body{
+    margin:0px ;
+    background-color:#ff4949;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+
+}
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    background-color:white;
+    height:10vh;
+    border-radius:0px 0px 5px 5px;
+    box-shadow: 0px 2px #dedede;
+    box-shadow: 0px 4px #eeeeee;
+    font-family:'Oxygen', sans-serif;
+    font-size:1rem;
+    color:#3c4245;
+}
+
+#company-logo{
+    height:60%;
+    margin:0px 10px;
+}
+.navbar-items{
+    margin:0px 10px;
+}
+
+.navbar-collapse{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+}
+
+a{
+    padding: 12px 14px;
+    text-decoration: none;
+    color: #3c4245;
+}
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbutton {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color:#3c4245;
+    padding: 12px 14px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbutton {
+    opacity:0.7;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container{
+      display:flex;
+      flex-direction:row;
+      margin: 20px auto;
+  }
+.content-card{
+    background-color:white;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width:40vw;
+    margin:0px 10px;
+    padding:20px;
+    border-radius:5px;
+}
+
+.card-title{
+    font-family:'Varela Round', sans-serif;
+    font-size:2rem;
+    color:#3c4245;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+
+p{
+    margin:0px 10px;
+    padding:0px 10px;
+}
+#total-income{
+    color:limegreen;
+    text-shadow: 0 0 3px rgba(39,213,7,0.6);
+}
+
+#total-expense{
+    color:red;
+    text-shadow:0 0 3px rgba(255,0,0,0.6);
+}
+
+#add-new-income{
+    height:2rem;
+    width:2rem;
+    opacity:0.6;
+}
+
+#add-new-expense{
+    height:2rem;
+    width:2rem;
+    opacity:0.6;
+}
+
+.new-transaction{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input{
+    border-radius:5px;
+    margin:10px;
+    height:2rem;
+    font-family:'Varela Round', sans-serif;
+    color:#3c4245;
+    border:1px solid gray;
+    text-align: center; 
+}
+
+#new-income-popup{
+    display:none;
+}
+#new-expense-popup{
+    display:none;
+}
+
+.round-button{
+    border-radius:50%;
+    height:24px;
+    width:24px;
+    background-color:red;
+    border:2px solid white;
+    color:white;
+    opacity:0.8;    
+}

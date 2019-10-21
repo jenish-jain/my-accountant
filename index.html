@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Varela+Round&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="http://nutrientcode.com" target="_blank" class="navbar-items">
+            <img id="company-logo" src="nutrient_code.png" alt="company-logo">
+        </a>
+        <div class="navbar-collapse">
+            <div class="navbar-items">
+                <a href="#">
+                    Home
+                </a>
+            </div>
+            <div class="dropdown navbar-items" id="projects">
+                <button class="dropbutton">Project</button>
+                <div class="dropdown-content">
+                    <a href="#">Radhey HVAC Engineers P:1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="navbar-items">
+                <p>User</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="content-card">
+            <div class="card-title">
+                <p>Total Income</p>
+                <p id="total-income">$1000000</p>
+                <img id= "add-new-income" src="add-new.png" onclick="showAddIncome()">
+            </div>
+            <hr>
+            <div id="new-income-popup">
+                <form name ="new-income" id="new-income" class="new-transaction" onsubmit="return newIncome()" >
+                    <input name="iDate" type="date" placeholder="Date">
+                    <input name="iDescription" type="text"placeholder="Description">
+                    <input name="iAmount" type="number" placeholder="Amount">
+                    <input name="iRecipient" type="text" placeholder="Recipient">
+                    <input type="submit" value="Add Income">
+                </form>
+            </div>
+            <table id="income-list" class="transaction-list">
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Recipient</th>
+                </tr>
+
+            </table>
+        </div>
+        <div class="content-card">
+            <div class="card-title">
+                <p>Total Expense</p>
+                <p id="total-expense">$10000</p>
+                <img id="add-new-expense" src="add-new.png" onclick="showAddExpense()">
+
+            </div>
+            <hr>
+            <div id="new-expense-popup">
+                    <from id="new-expense" class="new-transaction"  >
+                        <input name="eDate" type="date" placeholder="Date">
+                        <input name="eDescription" type="text"placeholder="Description">
+                        <input name="eAmount" type="number" placeholder="Amount">
+                        <input name= "ePayer" type="text" placeholder="Payer">
+                        <input type="submit" value="Add Expense">
+                    </from>
+                </div>
+            <table id="expense-list" class="transaction-list">
+                    <tr>
+                            <th>Sr No.</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Recipient</th>
+                        </tr>
+                    </table>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
